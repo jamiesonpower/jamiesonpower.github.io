@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>UN Goals Step 4</title>
+
+<style>
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .flip-box {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+  }
+  .flip-box-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  .flip-box:hover .flip-box-inner {
+    transform: rotateY(180deg);
+  }
+  .flip-box-front, .flip-box-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    
+  }
+  .flip-box-front {
+    background-color: #bbb;
+    color: black;
+  }
+  .flip-box-back {
+    background-color: dodgerblue;
+    color: white;
+    transform: rotateY(180deg);
+  }
+  .flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: DodgerBlue;
+    align-content: center;    
+    justify-content: center;
+  }
+  .flex-container > div {
+    background-color: #f1f1f1;
+    margin: 10px;
+    padding: 5px;
+    font-size: 30px;
+  }
+</style>
+
+
+</head>
+<body>
+
+<div class = "flex-container">
+  <div class="flip-box">
+    <div class="flip-box-inner">
+      <div class="flip-box-front">
+       <img src="images/E_SDG goal 01.png" alt="Avatar" style="width:300px; height:300px;"/>
+      </div>
+      <div class="flip-box-back" style="background-color: #EB1C2D">
+        <h3>No Poverty</h3>
+        <p>Is education the answer?</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="flip-box">
+    <div class="flip-box-inner">
+      <div class="flip-box-front">
+       <img src="images/E_SDG goal 02.png" alt="Avatar" style="width:300px; height:300px;"/>
+      </div>
+      <div class="flip-box-back" style="background-color: #d3a029">
+        <h3>Zero Hunger</h3>
+        <p>Can we create cheaper restaurants specifically targeted at a less compensated audience?</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="flip-box">
+    <div class="flip-box-inner">
+      <div class="flip-box-front">
+       <img src="images/E_SDG goal 03.png" alt="Avatar" style="width:300px; height:300px;"/>
+      </div>
+      <div class="flip-box-back" style = "background-color: #279B48;">
+        <h3>Good Health and Well-Being</h3>
+        <p>Is the idea of the buddy bench a good idea?</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="flip-box">
+    <div class="flip-box-inner">
+      <div class="flip-box-front">
+       <img src="images/E_SDG goal 04.png" alt="Avatar" style="width:300px; height:300px;"/>
+      </div>
+      <div class="flip-box-back" style="background-color: #C31F33;">
+        <h3>Quality Education</h3>
+        <p>Should testing for learning disabilities be mandatory in schools every couple years?</p>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="flip-box">
+    <div class="flip-box-inner">
+      <div class="flip-box-front">
+       <img src="images/E_SDG goal 05.png" alt="Avatar" style="width:300px; height:300px;"/>
+      </div>
+      <div class="flip-box-back" style="background-color: #EF402B;">
+        <h3>Gender Equality</h3>
+        <p>Should professional sports leagues include woman (ex. NBA)?</p>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="flip-box">
+    <div class="flip-box-inner">
+      <div class="flip-box-front">
+       <img src="images/E_SDG goal 06.png" alt="Avatar" style="width:300px; height:300px;"/>
+      </div>
+      <div class="flip-box-back" style="background-color: #00AED9;">
+        <h3>Clean Water and Sanitation</h3>
+        <p>Should there be water fountains and hand sanitizing stations on public streets every couple blocks?</p>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="flip-box">
+    <div class="flip-box-inner">
+      <div class="flip-box-front">
+       <img src="images/E_SDG goal 07.png" alt="Avatar" style="width:300px; height:300px;"/>
+      </div>
+      <div class="flip-box-back" style="background-color: #F99D26;">
+        <h3>Affordable and Clean Energy</h3>
+        <p>should schools use solar panels?</p>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="flip-box">
+    <div class="flip-box-inner">
+      <div class="flip-box-front">
+       <img src="images/E_SDG goal 08.png" alt="Avatar" style="width:300px; height:300px;"/>
+      </div>
+      <div class="flip-box-back" style="background-color: #8F1838;">
+        <h3>Decent Work and Economic Growth</h3>
+        <p>Should there be easier ways to change career paths?</p>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="flip-box">
+    <div class="flip-box-inner">
+      <div class="flip-box-front">
+       <img src="images/E_SDG goal 09.png" alt="Avatar" style="width:300px; height:300px;"/>
+      </div>
+      <div class="flip-box-back" style="background-color: #f36d2f">
+        <h3>Industry, Innovation and Infrastructure</h3>
+        <p>Should we promote more inclusive and sustainable industrialization and foster innovation?</p>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="flip-box">
+    <div class="flip-box-inner">
+      <div class="flip-box-front">
+       <img src="images/E_SDG goal 10.png" alt="Avatar" style="width:300px; height:300px;"/>
+      </div>
+      <div class="flip-box-back" style="background-color: #FF1484;">
+        <h3>Reduced Inequalities</h3>
+        <p>Should multiple interviews be done for jobs, the first being an online survey?</p>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="flip-box">
+    <div class="flip-box-inner">
+      <div class="flip-box-front">
+       <img src="images/E_SDG goal 11.png" alt="Avatar" style="width:300px; height:300px;"/>
+      </div>
+      <div class="flip-box-back" style="background-color: #F99D26">
+        <h3>Sustainable Cities and Communities</h3>
+        <p>Should we have more rooftop gardens to lower the effects of the Urban Heat Island?</p>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="flip-box">
+    <div class="flip-box-inner">
+      <div class="flip-box-front">
+       <img src="images/E_SDG goal 12.png" alt="Avatar" style="width:300px; height:300px;"/>
+      </div>
+      <div class="flip-box-back" style="background-color: #CF8D2A;">
+        <h3>Responsible Consumption and Production</h3>
+        <p>Should restaurants restrict the use of straws for drinks that don't need one?</p>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="flip-box">
+    <div class="flip-box-inner">
+      <div class="flip-box-front">
+       <img src="images/E_SDG goal 13.png" alt="Avatar" style="width:300px; height:300px;"/>
+      </div>
+      <div class="flip-box-back" style="background-color: #48773E">
+        <h3>Climate Action</h3>
+        <p>Are electric cars really helping?</p>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="flip-box">
+    <div class="flip-box-inner">
+      <div class="flip-box-front">
+       <img src="images/E_SDG goal 14.png" alt="Avatar" style="width:300px; height:300px;"/>
+      </div>
+      <div class="flip-box-back" style="background-color: #007DBC;">
+        <h3>Life Below Water</h3>
+        <p>Should governments be more aware of coral reefs before allowing tourists and swimmers?</p>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="flip-box">
+    <div class="flip-box-inner">
+      <div class="flip-box-front">
+       <img src="images/E_SDG goal 15.png" alt="Avatar" style="width:300px; height:300px;"/>
+      </div>
+      <div class="flip-box-back" style="background-color: #3EB049;">
+        <h3>Life on Land</h3>
+        <p>Should there be more gardens in residential areas?</p>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="flip-box">
+    <div class="flip-box-inner">
+      <div class="flip-box-front">
+       <img src="images/E_SDG goal 16.png" alt="Avatar" style="width:300px; height:300px;"/>
+      </div>
+      <div class="flip-box-back" style="background-color: #02558B">
+        <h3>Peace, Justice and Strong Institution</h3>
+        <p>Should body cams be rolling on cops all day?</p>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="flip-box">
+    <div class="flip-box-inner">
+      <div class="flip-box-front">
+       <img src="images/E_SDG goal 17.png" alt="Avatar" style="width:300px; height:300px;"/>
+      </div>
+      <div class="flip-box-back" style="background-color: #183668">
+        <h3>Partnerships for the Goals</h3>
+        <p>Can we work together?</p>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
