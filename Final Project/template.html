@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title></title>
+
+	<style>
+	body {
+	  font-family: Arial, Helvetica, sans-serif;
+	}
+
+	div {
+
+		border: 1px solid black;
+
+	}
+
+
+	.flip-box {
+	  border: none;
+	  display: inline-block;	
+	  background-color: transparent;
+	  width: 300px;
+	  height: 300px;
+	  perspective: 1000px;
+	}
+	.flip-box-inner {
+	  border: none;
+	  position: relative;
+	  width: 100%;
+	  height: 100%;
+	  text-align: center;
+	  transition: transform 0.8s;
+	  transform-style: preserve-3d;
+	}
+	.flip-box:hover .flip-box-inner {
+	  transform: rotateY(180deg);
+	}
+	.flip-box-front, .flip-box-back {
+			  border: none;
+	  position: absolute;
+	  width: 100%;
+	  height: 100%;
+	  backface-visibility: hidden;
+	}
+	.flip-box-front {
+		border: none;
+	 background-color: #bbb;
+	  color: black;
+	}
+	.flip-box-back {
+	  border: none;
+	  background-color: #EB1C2D;
+	  color: white;
+	  transform: rotateY(180deg);
+	}
+	.home {
+		position: fixed;
+		top: 10px;
+		right: 10px;
+		z-index: 2000;
+	}
+	.btn {
+		background-color: lightgrey;
+		border-radius: 20px;
+		font-size: 20px;
+	}
+	
+	</style>
+</head>
+<body> 
+	<div id = "arrows">
+		<p>◀️ ▶️</p>
+	</div>
+	<div id = "top">
+		<div class="flip-box">
+    		<div class="flip-box-inner">
+      			<div class="flip-box-front">
+       				<img src="finalimages/E_SDG goal 04.png" alt="Avatar" style="width:300px; height:300px;"/>
+     			</div>
+      			<div class="flip-box-back" style="background-color: #C31F33;">
+        			<h3>Quality Education</h3>
+        			<p>Education is one of the most detrimental pieces to adult development and is necessary to gain experience in all aspects of life including social interactions and job experience.</p>
+      			</div>
+    		</div>
+  		</div>
+	</div>
+
+	
+
+	<div id = "wrapper">
+	
+		<div id = "question1">
+			<p>Question 1</p>
+		</div>
+		<div id = "question2">
+			<p>Question 2</p>
+		</div>
+		<div id = "question3">
+			<p>Question 3</p>	
+		</div>
+	
+	</div>
+	
+	<div id = "charity">
+		<p>Save the Children is </p>
+	</div>
+
+	<div id = "footer">
+		<a href="url">https://support.savethechildren.org/site/Donation2?df_id=1620&1620.donation=form1</a>
+	</div>
+
+
+</body>
+</html>
