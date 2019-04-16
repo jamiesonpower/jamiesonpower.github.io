@@ -1,4 +1,5 @@
 #arrows{
+	text-align: center;
 	background-color: grey;
 
 }
@@ -56,12 +57,13 @@
 
 
 #charity{
+	text-align: center;
 	background-color: orange;
 
 }
 
 #footer{
-
+	text-align: center;
 	background-color: yellow;
 	height: 40px;
 
